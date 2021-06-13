@@ -47,7 +47,7 @@
       <section class="hero-one">
         <div class="container">
           <h1 class="heading">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="order">Заказать услугу</button>
+           <button data-modal-open class="order" type="button">Заказать услугу</button>
          </div>
         </section>
       
@@ -117,13 +117,22 @@
 
         <ul class="list work-list">
           <li class="work-type-item">
-            <img src="./image/img1.jpg" alt="клавиатура" width="370" />
+            <img src="./image/img1.jpg" alt="Десктопные приложения" width="370" />
+            <div class="photos-text">
+                <h3 class="photo-text-name">Десктопные приложения</h3>
+              </div>
           </li>
           <li class="work-type-item">
-            <img src="./image/img2.jpg" alt="телефон " width="370" />
+            <img src="./image/img2.jpg" alt="Мобильные приложения " width="370" />
+            <div class="photos-text">
+                <h3 class="photo-text-name">Мобильные приложения</h3>
+              </div>
           </li>
           <li class="work-type-item">
-            <img src="./image/img3.jpg" alt="планшет" width="370" />
+            <img src="./image/img3.jpg" alt="Дизайнерские решения" width="370" />
+            <div class="photos-text">
+                <h3 class="photo-text-name">Дизайнерские решения</h3>
+              </div>
           </li>
         </ul>
         </div>
@@ -391,8 +400,16 @@
           </ul>
         </div>
       </div>
-        </div>
-      
+        
+       
     </footer>
+      <div data-modal class="modal is-hidden">
+      <div class="modal-content">
+        <button data-modal-close type="button" class="close-button">
+          <svg class="close-cross"><use href="./icon.svg/sprite.svg#close"></use></svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
